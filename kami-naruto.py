@@ -4,6 +4,7 @@ def send_alert():
     print("alert!")
 
 def check_security(people):
+    found = False
     for p in people:
         if not found:
             if p == "Naruto":
