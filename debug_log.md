@@ -5,3 +5,5 @@
 - Line 8
 
 - The variable found is assigned later, so Python thinks it's a local variable. On the first loop iteration, line 8 reads found before any assignment, so it crashes with UnboundLocalError.
+
+- The fix is to give found a starting value before the loop so line 8 isn't reading something that doesn't exist yet
